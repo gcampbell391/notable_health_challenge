@@ -1,4 +1,5 @@
 class DoctorsController < ActionController::Base
+    protect_from_forgery with: :null_session
 
     # Renders all doctors with all of their appointments
     def index

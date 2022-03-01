@@ -12,8 +12,7 @@ Rails.application.routes.draw do
   get '/appointments/:date', to: 'doctors#show_appointments_for_specific_day'
 
 
-
-  post '/delete_appointment', to:'doctor#delete_appointment'
-  post '/add_appointment', to:'doctor#add_appointment'
+  post '/delete_appointment', to:'doctors#delete_appointment'
+  post '/add_appointment', to:'doctors#add_appointment'
 
 end
